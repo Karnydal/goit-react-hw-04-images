@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Overlay, ModalWindow } from './Modal.styled';
 
 
-export const Modal = ({ onClose, largeImage }) => {
+export function Modal({ onClose, largeImage }) {
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.code === 'Escape') {
